@@ -153,7 +153,18 @@
             </div>
           </div>
         </div>
-        <div class="box-image-item box-image-video novi-background bg-image" style="background-image: url(images/index-874x534.jpg)"><a class="icon novi-icon fa fa-caret-right" href="https://www.youtube.com/watch?v=xld3RNcg2P4&pp=ygUcYWZ0ZXIgZWZmZWN0cyB3YXRlcm1hcmsgcGFjaw%3D%3D" data-lightgallery="item"></a></div>
+        <!-- The box that you click on -->
+<div class="box-image-item box-image-video novi-background bg-image" style="background-image: url(images/index-874x534.jpg)">
+    <a class="icon novi-icon fa fa-caret-right" href="#" id="openModal"></a>
+</div>
+
+<!-- The modal overlay -->
+<div id="videoModal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <iframe id="shortsFrame" width="1080" height="1920" src="https://www.youtube.com/shorts/FP6bSQJ1yQg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
       </section>
       <!-- Our Mission-->
       <section class="section bg-default section-md">
